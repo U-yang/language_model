@@ -47,6 +47,7 @@ optional arguments:
                         path to export the final model in onnx format
   --nhead NHEAD         the number of heads in the encoder/decoder of the
                         transformer model
+  --log DIRECTORY       path to save the log file for tensorboard
 ```
 
 With these arguments, a variety of models can be tested.
@@ -58,3 +59,4 @@ python main.py --cuda --emsize 650 --nhid 650 --dropout 0.5 --epochs 40 --tied
 python main.py --cuda --emsize 1500 --nhid 1500 --dropout 0.65 --epochs 40        
 python main.py --cuda --emsize 1500 --nhid 1500 --dropout 0.65 --epochs 40 --tied 
 ```
+
